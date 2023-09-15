@@ -45,7 +45,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 nav ul {
@@ -364,6 +364,115 @@ section#projects {
     display: block;
 }
 
+/* Contact Section */
+section#contact {
+    background-color: white;
+    color: black;
+    min-height: 85vh; /* Set minimum height to 100vh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 65%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button.submit-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+	margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.submit-button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: rgba(240, 240, 240, 0.9);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        max-width: 95%;
+    }
+}
 
 @media (max-width: 992px) {
     section#about .content .pane-wrapper {
