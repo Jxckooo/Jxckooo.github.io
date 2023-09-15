@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a class="nav-button-scroll" href="#home">Home</a></li>
+            <li><a class="nav-button-scroll" href="#about">About</a></li>
+            <li><a class="nav-button-scroll" href="#projects">Projects</a></li>
+            <li><a class="nav-button-scroll" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div id="background-1"></div>
+        <div class="content">
+            <h1>Welcome to my Portfolio!</h1>
+            <h2>Jack Magee</h2>
+            <p>Software/Web Developer</p>
+            <a href="#about" class="scroll-button">See More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h1>About myself, and what I do...</h1>
+            <div class="pane-wrapper">
+                <div class="about-pane">
+                    <i class="fas fa-user"></i>
+                    <h2>About Me</h2>
+                    <p>I'm an 18-year-old software and web developer currently pursuing a foundation degree in Cloud Computing, Analytics, and Security for Industry. I specialize in both front-end and back-end development, crafting applications for Linux and Windows platforms. I'm proficient in various languages such as C#, C++, PHP, JavaScript, Java, and still learning!</p>
+                </div>
+                <div class="about-pane">
+                    <i class="fas fa-code"></i>
+                    <h2>My Work</h2>
+                    <p>I excel in creating responsive and user-friendly websites, in addition to developing versatile applications for various platforms. These applications encompass a wide range of functionalities, showcasing my adaptability and commitment to efficient software solutions.</p>
+                </div>
+                <div class="about-pane">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Beyond Coding</h2>
+                    <p>Beyond my technical pursuits, I'm passionate about exploring emerging technologies, experimenting with innovative concepts, and staying updated with the ever-evolving tech industry. This curiosity fuels my continuous skill expansion and contributions to the dynamic world of technology.</p>
+                </div>
+            </div>
+            <h2>Click below to see some information about some of my projects.</h2>
+            <a href="#projects" class="scroll-button black">See Projects</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div id="background-2"></div>
+        <h1>My Projects</h1>
+        <div class="carousel-container">
+            <button id="prev-button"><i class="fas fa-angle-double-up"></i></button>
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img class="carousel-image" src="assets/img/auth2.png" alt="EncryptoAuth">
+                    <div class="carousel-caption">
+                        <h2>Encrypto Authentication</h2>
+                        <p>This is a C/C++ library written for use in Windows and Linux, hoping to further expand to MacOS. It allows for easy user management, authorization, and has lots of other features such as HWID locking. Making authentication simpler.</p>
+                        <a href="https://encryptogram.co.uk/Auth/" class="view-button">View Project</a>
+                    </div>
+                    <div class="carousel-spoiler">
+                        <h2 class="mobile-text">Tap for more information.</h2>
+						<h2 class="pc-text">Hover for more information.</h2>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="assets/img/chat2.png" alt="Encryptogram">
+                    <div class="carousel-caption">
+                        <h2>Encryptogram</h2>
+                        <p>An end-to-end encrypted social media platform, featuring group chats, private messages, image uploads, invite codes, add friends, EncryptoGPT chat bot (AI-based text bot).</p>
+                        <a href="https://encryptogram.co.uk/" class="view-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <button id="next-button"><i class="fas fa-angle-double-down"></i></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+    
+    </section>
+
+</body>
+</html>
