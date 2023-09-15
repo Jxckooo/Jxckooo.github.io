@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         // Check captcha
-        const captchaResponse = hCaptcha.getResponse();
+        const captchaResponse = hcaptcha.getResponse();
         if (!captchaResponse) {
             alert('Please complete the captcha.');
             return;
